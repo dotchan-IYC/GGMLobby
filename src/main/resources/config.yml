@@ -1,0 +1,134 @@
+# GGMLobby 플러그인 설정 파일
+
+# 데이터베이스 설정
+database:
+  host: "localhost"
+  port: 3306
+  database: "ggm_server"
+  username: "root"
+  password: "1224"
+
+# 출석 체크 설정
+attendance:
+  # 연속 출석 보상 (일차별)
+  rewards:
+    1:
+      money: 1000
+      item: null
+    2:
+      money: 1500
+      item: "BOOK"
+    3:
+      money: 2000
+      item: null
+    4:
+      money: 2500
+      item: "ENCHANTED_BOOK"
+    5:
+      money: 3000
+      item: null
+    6:
+      money: 3500
+      item: "ENCHANTED_BOOK"
+    7:
+      money: 5000
+      item: "NETHER_STAR"
+  
+  # 월간 출석 특별 보상
+  monthly_reward:
+    money: 100000
+    days_required: 30
+
+# 랭킹 시스템 설정
+ranking:
+  # 랭킹 업데이트 간격 (분)
+  update_interval: 5
+  
+  # 랭킹 보상 (월말 지급)
+  rewards:
+    1:
+      money: 50000
+      title: "1위"
+    2:
+      money: 30000
+      title: "2위"
+    3:
+      money: 30000
+      title: "3위"
+    "4-10":
+      money: 15000
+    "11-50":
+      money: 5000
+
+# 거래소 설정
+market:
+  # 최대 동시 판매 개수
+  max_listings_per_player: 10
+  
+  # 판매 수수료 (%)
+  fee_percentage: 5
+  
+  # 아이템 보관 기간 (일)
+  listing_duration_days: 7
+  
+  # 최소/최대 판매 가격
+  min_price: 100
+  max_price: 1000000000
+  
+  # 만료된 아이템 정리 간격 (시간)
+  cleanup_interval_hours: 1
+
+# 로비 상점 설정
+shop:
+  # 상품 정보는 코드에서 관리
+  enabled: true
+
+# 채팅 시스템 설정
+chat:
+  # 금지어 목록
+  banned_words:
+    - "바보"
+    - "멍청이"
+    - "바카"
+  
+  # 스팸 방지 설정
+  spam_protection:
+    enabled: true
+    max_messages_per_second: 3
+    cooldown_seconds: 5
+  
+  # 기본 이모티콘 활성화
+  emojis:
+    enabled: true
+
+# 메시지 설정
+messages:
+  prefix: "§6[GGM로비]§r "
+  
+  # 환영 메시지
+  welcome:
+    - "§6━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+    - "§e§l🎮 GGM 로비에 오신 것을 환영합니다!"
+    - ""
+    - "§a주요 기능: §e/attendance, /ranking, /market, /shop"
+    - "§6━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  
+  # 도움말 메시지
+  help:
+    general:
+      - "§6━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - "§e§l🎮 GGM 로비 도움말"
+      - ""
+      - "§a주요 명령어:"
+      - "§7• §e/attendance §7- 출석 체크"
+      - "§7• §e/ranking §7- 랭킹 확인"
+      - "§7• §e/market §7- 플레이어 거래소"
+      - "§7• §e/shop §7- 로비 상점"
+      - "§7• §e/chat §7- 채팅 설정"
+      - "§6━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+# 디버그 설정
+debug:
+  enabled: false
+  log_sql_queries: false
+  log_economy_transactions: true

@@ -1,0 +1,87 @@
+name: GGMLobby
+version: '1.0.0'
+main: com.ggm.lobby.GGMLobby
+api-version: 1.20
+authors: [ DotC ]
+description: GGM 로비 플러그인 - 랭킹, 출석, 거래소, 상점 시스템
+website: https://ggm.server.com
+depend: []
+softdepend: [GGMCore]
+
+commands:
+  attendance:
+    description: 출석 체크 시스템
+    usage: /attendance
+    aliases: [출석, attend]
+    permission: ggm.lobby.attendance
+
+  ranking:
+    description: 플레이어 랭킹 확인
+    usage: /ranking [type]
+    aliases: [rank, 랭킹]
+    permission: ggm.lobby.ranking
+
+  market:
+    description: 플레이어 거래소
+    usage: /market [sell|my|search]
+    aliases: [거래소, trade]
+    permission: ggm.lobby.market
+
+  shop:
+    description: 로비 상점
+    usage: /shop [category]
+    aliases: [상점, store]
+    permission: ggm.lobby.shop
+
+  chat:
+    description: 채팅 설정
+    usage: /chat [channel]
+    aliases: [채팅, ch]
+    permission: ggm.lobby.chat
+
+  emoji:
+    description: 이모티콘 목록
+    usage: /emoji
+    aliases: [이모티콘]
+    permission: ggm.lobby.chat
+
+  lobbyadmin:
+    description: 로비 관리자 명령어
+    usage: /lobbyadmin <subcommand>
+    permission: ggm.lobby.admin
+
+permissions:
+  ggm.lobby.*:
+    description: 모든 로비 권한
+    default: op
+    children:
+      ggm.lobby.attendance: true
+      ggm.lobby.ranking: true
+      ggm.lobby.market: true
+      ggm.lobby.shop: true
+      ggm.lobby.chat: true
+      ggm.lobby.admin: true
+
+  ggm.lobby.attendance:
+    description: 출석 체크 사용
+    default: true
+
+  ggm.lobby.ranking:
+    description: 랭킹 확인
+    default: true
+
+  ggm.lobby.market:
+    description: 거래소 사용
+    default: true
+
+  ggm.lobby.shop:
+    description: 로비 상점 사용
+    default: true
+
+  ggm.lobby.chat:
+    description: 채팅 기능 사용
+    default: true
+
+  ggm.lobby.admin:
+    description: 로비 관리자 권한
+    default: op
