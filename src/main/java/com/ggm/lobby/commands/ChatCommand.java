@@ -64,7 +64,7 @@ public class ChatCommand implements CommandExecutor {
 
     private void showChatHelp(Player player) {
         player.sendMessage("§6━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
-        player.sendMessage("§e§l💬 채팅 시스템 도움말");
+        player.sendMessage("§e§l채팅 시스템 도움말");
         player.sendMessage("");
         player.sendMessage("§7/chat global §f- 전체 서버 채팅");
         player.sendMessage("§7/chat lobby §f- 로비 전용 채팅");
@@ -82,7 +82,7 @@ public class ChatCommand implements CommandExecutor {
 
     private void showChatColors(Player player) {
         player.sendMessage("§6━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
-        player.sendMessage("§e§l🎨 채팅 색상 정보");
+        player.sendMessage("§e§l채팅 색상 정보");
         player.sendMessage("");
         player.sendMessage("§f일반: §f하얀색 (기본)");
         player.sendMessage("§6VIP1: §6금색 (상점 구매)");

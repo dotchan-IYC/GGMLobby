@@ -87,7 +87,7 @@ public class LobbyAdminCommand implements CommandExecutor {
 
     private void showRankingInfo(CommandSender sender) {
         sender.sendMessage("§6━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
-        sender.sendMessage("§e§l🏆 랭킹 시스템 관리");
+        sender.sendMessage("§e§l랭킹 시스템 관리");
         sender.sendMessage("");
         sender.sendMessage("§7/lobbyadmin ranking update §f- 랭킹 강제 업데이트");
         sender.sendMessage("§7랭킹은 5분마다 자동 업데이트됩니다.");
@@ -96,7 +96,7 @@ public class LobbyAdminCommand implements CommandExecutor {
 
     private void showMarketInfo(CommandSender sender) {
         sender.sendMessage("§6━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
-        sender.sendMessage("§e§l📦 거래소 관리");
+        sender.sendMessage("§e§l거래소 관리");
         sender.sendMessage("");
         sender.sendMessage("§7/lobbyadmin market clear §f- 만료된 아이템 정리");
         sender.sendMessage("§7만료된 아이템은 1시간마다 자동 정리됩니다.");
@@ -105,7 +105,7 @@ public class LobbyAdminCommand implements CommandExecutor {
 
     private void showServerStats(CommandSender sender) {
         sender.sendMessage("§6━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
-        sender.sendMessage("§e§l📊 서버 통계");
+        sender.sendMessage("§e§l서버 통계");
         sender.sendMessage("");
         sender.sendMessage("§7온라인 플레이어: §f" + plugin.getServer().getOnlinePlayers().size() + "명");
         sender.sendMessage("§7서버 TPS: §a양호");
@@ -121,7 +121,7 @@ public class LobbyAdminCommand implements CommandExecutor {
 
     private void showAdminHelp(CommandSender sender) {
         sender.sendMessage("§6━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
-        sender.sendMessage("§e§l🔧 로비 관리자 명령어");
+        sender.sendMessage("§e§l로비 관리자 명령어");
         sender.sendMessage("");
         sender.sendMessage("§7/lobbyadmin reload §f- 설정 리로드");
         sender.sendMessage("§7/lobbyadmin ranking §f- 랭킹 관리");

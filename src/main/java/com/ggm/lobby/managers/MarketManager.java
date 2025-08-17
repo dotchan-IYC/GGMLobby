@@ -24,15 +24,15 @@ public class MarketManager {
     private final EconomyManager economyManager;
 
     public enum MarketCategory {
-        WEAPONS("⚔️ 무기류", Material.DIAMOND_SWORD),
-        ARMOR("🛡️ 방어구", Material.DIAMOND_CHESTPLATE),
-        TOOLS("🔨 도구류", Material.DIAMOND_PICKAXE),
-        BLOCKS("🧱 블록류", Material.STONE),
-        FOOD("🍖 음식", Material.COOKED_BEEF),
-        POTIONS("🧪 포션류", Material.POTION),
-        ENCHANT_BOOKS("📚 인첸트북", Material.ENCHANTED_BOOK),
-        RARE_ITEMS("💎 희귀 아이템", Material.NETHER_STAR),
-        MISC("📦 기타", Material.CHEST);
+        WEAPONS("무기류", Material.DIAMOND_SWORD),
+        ARMOR("방어구", Material.DIAMOND_CHESTPLATE),
+        TOOLS("도구류", Material.DIAMOND_PICKAXE),
+        BLOCKS("블록류", Material.STONE),
+        FOOD("음식", Material.COOKED_BEEF),
+        POTIONS("포션류", Material.POTION),
+        ENCHANT_BOOKS("인첸트북", Material.ENCHANTED_BOOK),
+        RARE_ITEMS("희귀 아이템", Material.NETHER_STAR),
+        MISC("기타", Material.CHEST);
 
         private final String displayName;
         private final Material icon;
@@ -173,7 +173,7 @@ public class MarketManager {
      * 거래소 메인 GUI 생성
      */
     public Inventory createMarketGUI(MarketCategory category, int page) {
-        String title = category != null ? category.getDisplayName() + " 거래소" : "📦 플레이어 거래소";
+        String title = category != null ? category.getDisplayName() + " 거래소" : "플레이어 거래소";
         Inventory gui = Bukkit.createInventory(null, 54, title);
 
         // 카테고리 버튼 (상단)
@@ -228,9 +228,9 @@ public class MarketManager {
         }
 
         lore.add("");
-        lore.add("§6💰 가격: §f" + economyManager.formatMoney(listing.getPrice()) + "G");
-        lore.add("§7👤 판매자: §f" + listing.getSellerName());
-        lore.add("§7📅 등록일: §f" + listing.getListedTime().toLocalDate());
+        lore.add("§6가격: §f" + economyManager.formatMoney(listing.getPrice()) + "G");
+        lore.add("§7판매자: §f" + listing.getSellerName());
+        lore.add("§7등록일: §f" + listing.getListedTime().toLocalDate());
         lore.add("");
         lore.add("§e클릭하여 구매하기");
 
@@ -269,14 +269,14 @@ public class MarketManager {
         }
 
         lore.add("");
-        lore.add("§6💰 가격: §f" + economyManager.formatMoney(listing.getPrice()) + "G");
+        lore.add("§6가격: §f" + economyManager.formatMoney(listing.getPrice()) + "G");
 
         if (listing.isSold()) {
-            lore.add("§a✓ 판매 완료");
+            lore.add("§a판매 완료");
             lore.add("§7구매자: §f" + listing.getBuyerName());
             lore.add("§7판매일: §f" + listing.getSoldTime().toLocalDate());
         } else {
-            lore.add("§e⏳ 판매 중");
+            lore.add("§e판매 중");
             lore.add("§7만료일: §f" + listing.getExpiryTime().toLocalDate());
             lore.add("");
             lore.add("§c우클릭하여 취소하기");

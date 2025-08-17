@@ -102,7 +102,7 @@ public class MarketCommand implements CommandExecutor {
                             player.getInventory().setItemInMainHand(null);
 
                             player.sendMessage("§a━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
-                            player.sendMessage("§a§l📦 아이템 등록 완료!");
+                            player.sendMessage("§a§l아이템 등록 완료!");
                             player.sendMessage("");
                             player.sendMessage("§7아이템: §f" + getItemDisplayName(item));
                             player.sendMessage("§7판매 가격: §6" + plugin.getEconomyManager().formatMoney(price) + "G");
@@ -131,7 +131,7 @@ public class MarketCommand implements CommandExecutor {
 
     private void showMarketHelp(Player player) {
         player.sendMessage("§6━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
-        player.sendMessage("§e§l📦 거래소 도움말");
+        player.sendMessage("§e§l거래소 도움말");
         player.sendMessage("");
         player.sendMessage("§7/market §f- 거래소 메인");
         player.sendMessage("§7/market sell <가격> §f- 손에 든 아이템 판매");

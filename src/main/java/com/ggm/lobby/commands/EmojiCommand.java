@@ -35,7 +35,7 @@ public class EmojiCommand implements CommandExecutor {
         Map<String, String> availableEmojis = chatManager.getAvailableEmojis(player);
 
         player.sendMessage("§6━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
-        player.sendMessage("§e§l😀 사용 가능한 이모티콘");
+        player.sendMessage("§e§l사용 가능한 이모티콘");
         player.sendMessage("");
 
         if (availableEmojis.isEmpty()) {

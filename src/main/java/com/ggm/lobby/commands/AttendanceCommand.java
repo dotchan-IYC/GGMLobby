@@ -56,7 +56,7 @@ public class AttendanceCommand implements CommandExecutor {
                 .thenAccept(result -> {
                     plugin.getServer().getScheduler().runTask(plugin, () -> {
                         player.sendMessage("§6━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
-                        player.sendMessage("§e§l📅 출석 체크 결과");
+                        player.sendMessage("§e§l출석 체크 결과");
                         player.sendMessage("");
 
                         if (result.isSuccess()) {
@@ -87,7 +87,7 @@ public class AttendanceCommand implements CommandExecutor {
 
     private void showAttendanceHelp(Player player) {
         player.sendMessage("§6━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
-        player.sendMessage("§e§l📅 출석 체크 도움말");
+        player.sendMessage("§e§l출석 체크 도움말");
         player.sendMessage("");
         player.sendMessage("§7/attendance §f- 출석 달력 열기");
         player.sendMessage("§7/attendance check §f- 출석 체크");

@@ -51,7 +51,7 @@ public class ChatManager {
 
     private void initializeBannedWords() {
         // 기본 금지어 패턴
-        bannedPatterns.add(Pattern.compile("\\b(바보|멍청이|바카)\\b", Pattern.CASE_INSENSITIVE));
+        bannedPatterns.add(Pattern.compile("\\b(바보|멍청이|바카|시발|좆)\\b", Pattern.CASE_INSENSITIVE));
         bannedPatterns.add(Pattern.compile("\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}")); // IP 주소
         bannedPatterns.add(Pattern.compile("\\w+\\.(com|net|org|co\\.kr)")); // 도메인
     }

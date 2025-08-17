@@ -141,7 +141,7 @@ public class GUIListener implements Listener {
 
                                 if (success) {
                                     player.sendMessage("§a━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
-                                    player.sendMessage("§a§l🛍️ 구매 완료!");
+                                    player.sendMessage("§a§l구매 완료!");
                                     player.sendMessage("");
                                     player.sendMessage("§7상품: §f" + item.getName());
                                     player.sendMessage("§7가격: §6" + plugin.getEconomyManager().formatMoney(item.getPrice()) + "G");

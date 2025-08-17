@@ -78,7 +78,7 @@ public class ShopCommand implements CommandExecutor {
 
     private void showMyPurchases(Player player) {
         player.sendMessage("§6━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
-        player.sendMessage("§e§l🛍️ 내 구매 목록");
+        player.sendMessage("§e§l내 구매 목록");
         player.sendMessage("");
 
         // 주요 아이템들의 소유 여부 확인
@@ -107,7 +107,7 @@ public class ShopCommand implements CommandExecutor {
 
     private void showShopHelp(Player player) {
         player.sendMessage("§6━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
-        player.sendMessage("§e§l🏪 로비 상점 도움말");
+        player.sendMessage("§e§l로비 상점 도움말");
         player.sendMessage("");
         player.sendMessage("§7/shop §f- 상점 메인");
         player.sendMessage("§7/shop cosmetics §f- 코스메틱 상품");
@@ -117,9 +117,9 @@ public class ShopCommand implements CommandExecutor {
         player.sendMessage("§7/shop my §f- 내 구매 목록");
         player.sendMessage("");
         player.sendMessage("§a§l인기 상품:");
-        player.sendMessage("§7• §6💰 G 부스터 §7- 24시간 2배 획득");
-        player.sendMessage("§7• §e😀 이모티콘 팩 §7- 20개 추가 이모티콘");
-        player.sendMessage("§7• §d❤️ 하트 파티클 §7- 30일간 특수 효과");
+        player.sendMessage("§7• §6G 부스터 §7- 24시간 2배 획득");
+        player.sendMessage("§7• §e이모티콘 팩 §7- 20개 추가 이모티콘");
+        player.sendMessage("§7• §d❤하트 파티클 §7- 30일간 특수 효과");
         player.sendMessage("§6━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
     }
 }

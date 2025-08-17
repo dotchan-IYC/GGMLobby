@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'com.ggm.survival'
-version = 'GGMLobby-01'
+version = 'GGMLobby-02'
 
 repositories {
     mavenCentral()

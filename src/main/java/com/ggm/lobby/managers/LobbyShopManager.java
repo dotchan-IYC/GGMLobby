@@ -25,11 +25,11 @@ public class LobbyShopManager {
 
     // 상점 아이템 카테고리
     public enum ShopCategory {
-        COSMETICS("✨ 코스메틱", Material.NETHER_STAR),
-        CHAT("💬 채팅 강화", Material.PAPER),
-        UTILITIES("🔧 편의 기능", Material.ENDER_CHEST),
-        BOOSTS("⚡ 부스터", Material.EXPERIENCE_BOTTLE),
-        SPECIAL("🎁 특별 아이템", Material.CHEST); // GIFT → CHEST
+        COSMETICS("코스메틱", Material.NETHER_STAR),
+        CHAT("채팅 강화", Material.PAPER),
+        UTILITIES("편의 기능", Material.ENDER_CHEST),
+        BOOSTS("부스터", Material.EXPERIENCE_BOTTLE),
+        SPECIAL("특별 아이템", Material.CHEST); // GIFT → CHEST
 
         private final String displayName;
         private final Material icon;
@@ -54,16 +54,16 @@ public class LobbyShopManager {
 
     private void initializeShopItems() {
         // 코스메틱
-        shopItems.put("heart_particle", new ShopItem("heart_particle", "❤️ 하트 파티클",
+        shopItems.put("heart_particle", new ShopItem("heart_particle", "하트 파티클",
                 Arrays.asList("§7걸을 때 하트가 떨어져요!", "§7지속시간: 30일"),
                 10000L, ShopCategory.COSMETICS, Material.REDSTONE));
 
-        shopItems.put("rich_title", new ShopItem("rich_title", "💰 부자 칭호",
+        shopItems.put("rich_title", new ShopItem("rich_title", "부자 칭호",
                 Arrays.asList("§7닉네임 앞에 §6[부자]§7 표시", "§7영구적으로 사용 가능"),
                 15000L, ShopCategory.COSMETICS, Material.GOLD_INGOT));
 
         // 채팅 강화
-        shopItems.put("chat_color", new ShopItem("chat_color", "🌈 채팅 색상",
+        shopItems.put("chat_color", new ShopItem("chat_color", "채팅 색상",
                 Arrays.asList("§7채팅에 색상을 입혀보세요!", "§7지속시간: 30일"),
                 5000L, ShopCategory.CHAT, Material.RED_DYE));
 
@@ -72,20 +72,20 @@ public class LobbyShopManager {
                 8000L, ShopCategory.CHAT, Material.PAINTING));
 
         // 편의 기능
-        shopItems.put("storage_expand", new ShopItem("storage_expand", "📦 보관함 확장",
+        shopItems.put("storage_expand", new ShopItem("storage_expand", "보관함 확장",
                 Arrays.asList("§7개인 보관함 슬롯 +27개", "§7영구적으로 확장됨"),
                 25000L, ShopCategory.UTILITIES, Material.ENDER_CHEST));
 
-        shopItems.put("quick_teleport", new ShopItem("quick_teleport", "⚡ 빠른 이동권",
+        shopItems.put("quick_teleport", new ShopItem("quick_teleport", "빠른 이동권",
                 Arrays.asList("§7서버 이동 시 로딩 시간 단축", "§7사용 횟수: 10회"),
                 3000L, ShopCategory.UTILITIES, Material.ENDER_PEARL));
 
         // 부스터
-        shopItems.put("money_boost", new ShopItem("money_boost", "💰 G 부스터",
+        shopItems.put("money_boost", new ShopItem("money_boost", "G 부스터",
                 Arrays.asList("§7G 획득량 2배 증가!", "§7지속시간: 24시간"),
                 15000L, ShopCategory.BOOSTS, Material.GOLD_BLOCK));
 
-        shopItems.put("dragon_boost", new ShopItem("dragon_boost", "🐉 드래곤 부스터",
+        shopItems.put("dragon_boost", new ShopItem("dragon_boost", "드래곤 부스터",
                 Arrays.asList("§7드래곤 보상 1.2배 증가!", "§7지속시간: 3일"),
                 30000L, ShopCategory.BOOSTS, Material.DRAGON_HEAD));
     }

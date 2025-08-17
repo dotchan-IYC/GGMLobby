@@ -75,7 +75,7 @@ public class RankingCommand implements CommandExecutor {
 
     private void showMyRankings(Player player) {
         player.sendMessage("§6━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
-        player.sendMessage("§e§l🏆 내 순위 정보");
+        player.sendMessage("§e§l내 순위 정보");
         player.sendMessage("");
 
         for (RankingManager.RankingType type : RankingManager.RankingType.values()) {
@@ -101,7 +101,7 @@ public class RankingCommand implements CommandExecutor {
 
     private void showRankingHelp(Player player) {
         player.sendMessage("§6━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
-        player.sendMessage("§e§l🏆 랭킹 시스템 도움말");
+        player.sendMessage("§e§l랭킹 시스템 도움말");
         player.sendMessage("");
         player.sendMessage("§7/ranking §f- 전체 랭킹 GUI");
         player.sendMessage("§7/ranking money §f- G 랭킹");

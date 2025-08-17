@@ -22,11 +22,11 @@ public class RankingManager {
     private final DatabaseManager databaseManager;
 
     public enum RankingType {
-        MONEY("G 보유량", "💰"),
-        PLAYTIME("플레이 시간", "⏰"),
-        DRAGON_KILLS("드래곤 처치", "🐉"),
-        MARKET_SALES("거래소 판매", "📈"),
-        ATTENDANCE("연속 출석", "📅");
+        MONEY("G 보유량", ""),
+        PLAYTIME("플레이 시간", ""),
+        DRAGON_KILLS("드래곤 처치", ""),
+        MARKET_SALES("거래소 판매", ""),
+        ATTENDANCE("연속 출석", "");
 
         private final String displayName;
         private final String emoji;

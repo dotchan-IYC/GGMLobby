@@ -154,7 +154,7 @@ public class AttendanceManager {
      * 출석 달력 GUI 생성
      */
     public Inventory createAttendanceGUI(UUID uuid) {
-        Inventory gui = Bukkit.createInventory(null, 54, "§6§l📅 출석 체크 달력");
+        Inventory gui = Bukkit.createInventory(null, 54, "§6§l출석 체크 달력");
 
         // 현재 월의 출석 현황 표시
         LocalDate today = LocalDate.now();
@@ -208,7 +208,7 @@ public class AttendanceManager {
                 // 출석 보상 정보 표시
                 ItemStack rewardInfo = new ItemStack(Material.CHEST);
                 ItemMeta rewardMeta = rewardInfo.getItemMeta();
-                rewardMeta.setDisplayName("§6§l🎁 출석 보상");
+                rewardMeta.setDisplayName("§6§l출석 보상");
                 List<String> rewardLore = Arrays.asList(
                         "§71일: §61,000G",
                         "§72일: §61,500G §7+ 인첸트북",
